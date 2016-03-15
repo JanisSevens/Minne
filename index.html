@@ -75,19 +75,23 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <form>
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name">
-                            
-                        </input><br>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name"></input><br>
-                        <label for="email">Email</label>
-                        <input type="text" name="email"></input><br>
-                        <textarea cols="30" rows="10"></textarea>                        
-                    </form>
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+        <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" id="email" type="text">
+            </div>
+        <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <div class="checkbox">
+                <label><input type="checkbox" value="true">Ik wens op de hoogte te blijven van de activiteiten van de Minne.</label>
+        </div>    
+
+
                 </div>
             </div>
         </div>
