@@ -59,13 +59,15 @@ a:visited {
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
     text-align: center;
     background: url('https://scontent-fra3-1.xx.fbcdn.net/hphotos-xtp1/v/t1.0-9/12728847_517966578382576_4567590552699915154_n.jpg?oh=012202c38e4dd026faf67e0d9e6487fc&oe=57610C4C') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
     
 
