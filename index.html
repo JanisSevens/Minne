@@ -24,6 +24,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -31,14 +32,16 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-
+<nav class="navbar"><a class="page-scroll" href="#intro"><span class="
+glyphicon glyphicon-triangle-top"></span></a>
+</nav>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
                     <div class="col-lg-12">
-                    <img class="img-respnsive" src="img/minnegent.png" alt="minnegent">
+                    <img class="minne img-responsive" src="img/minnegent.png" alt="minnegent">
                     </div>
                     <div class="col-sm-offset-3 col-sm-6 col-xs-12">
                     <p>De Minne is een gezellige <a class="page-scroll" href="#about">ontmoetingsplaats</a> waar je terecht kan voor een drankje, een snelle hap of een volwaardige lunch. Bij de Minne wordt alles vers in huis gemaakt, onze <a class="page-scroll" href="#services">menukaart</a> veranderd dan ook elke dag! Voor zij die geen genoeg kunnen krijgen van ons lekker eten is er ook de mogelijkheid om ons eten op te <a class="page-scroll" href="#contact">af te halen.</a> 
@@ -59,7 +62,6 @@
 
                 </div>
                 <div class="col-lg-12 center">
-                <a class="page-scroll" href="#intro">Home</a> 
             </div>
         </div>
     </section>
@@ -77,7 +79,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container">
+        <div class="container col-sm-offset-3 col-sm-6 col-xs-12">
             <div class="form-group">
                 <label for="usr">Name:</label>
                 <input type="text" class="form-control" id="usr">
@@ -89,11 +91,15 @@
         <div class="form-group">
                 <label for="comment">Comment:</label>
                 <textarea class="form-control" rows="5" id="comment"></textarea>
+                
         </div>
+        <div class="form-icons">
+        <p id="glyphicon"  class="fa fa-smile-o" style="font-size:48px;"></p><a class="fa fa-meh-o" style="font-size:48px;padding-left: 5px;padding-right: 5px;"></a><a  class="fa fa-frown-o" style="font-size:48px;"></a>
+        </div>
+
         <div class="checkbox">
                 <label><input type="checkbox" value="true">Ik wens op de hoogte te blijven van de activiteiten van de Minne.</label>
         </div>    
-
 
                 </div>
             </div>
@@ -109,6 +115,9 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+<script>
+
+</script>
 
 </body>
 
