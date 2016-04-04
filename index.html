@@ -59,7 +59,7 @@ glyphicon glyphicon-triangle-top"></span></a>
             <div class="row">
                 <div class="col-lg-12">
                     <h1>About Section</h1>
-
+<p>
                 </div>
                 <div class="col-lg-12 center">
             </div>
@@ -80,7 +80,21 @@ glyphicon glyphicon-triangle-top"></span></a>
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container col-sm-offset-3 col-sm-6 col-xs-12">
-            <div class="form-group">
+            <form action="" class="form-group">
+            <h2>Radio Buttons</h2>
+            <input type="radio" name="beoordeling" value"tevreden" id="tevreden"></input>
+            <label for="tevreden" class="fa fa-smile-o"></label>
+
+            <input type="radio" name="beoordeling" value"voldoende" id="voldoende"></input>
+            <label for="voldoende" class="fa fa-meh-o"></label>
+
+            <input type="radio" name="beoordeling" value"ontevreden" id="ontevreden"></input>
+            <label for="ontevreden" class="fa fa-frown-o"></label>
+            
+
+            </form>
+
+            <!-- <div class="form-group">
                 <label for="usr">Name:</label>
                 <input type="text" class="form-control" id="usr">
             </div>
@@ -89,20 +103,42 @@ glyphicon glyphicon-triangle-top"></span></a>
                 <input class="form-control" id="email" type="text">
             </div>
         <div class="form-group">
+                <label for="onderwerp">Onderwerp:</label>
+                <input class="form-control" id="onderwerp"></textarea>
+                
+        </div>
+        <div class="form-group">
                 <label for="comment">Comment:</label>
                 <textarea class="form-control" rows="5" id="comment"></textarea>
                 
         </div>
-        <div class="form-icons">
-        <p id="glyphicon"  class="fa fa-smile-o" style="font-size:48px;"></p><a class="fa fa-meh-o" style="font-size:48px;padding-left: 5px;padding-right: 5px;"></a><a  class="fa fa-frown-o" style="font-size:48px;"></a>
+        <div class="form-group">
+                <label><input type="checkbox" value="true">Ik wens op de hoogte te blijven van de activiteiten van de Minne.</label>
+        </div> 
+
+        <div class="form-group">
+                <label for="positief" class="fa fa-smile-o"></label>
+                <input type="checkbox" name="glyphicon" id="positief" value="positief">
+                <label for="voldoende" class="fa fa-meh-o"></label>
+                <input type="checkbox" name="glyphicon" id="voldoende" value="voldoende">
         </div>
 
-        <div class="checkbox">
-                <label><input type="checkbox" value="true">Ik wens op de hoogte te blijven van de activiteiten van de Minne.</label>
-        </div>    
+
+        do not display    
+
+        <div class="form-group">
+
+        <button onclick="return()" id="glyphicon" class="fa fa-smile-o" style="font-size:48px;"></button><button onclick="returnRating()" id="glyphicon" class="fa fa-meh-o" style="font-size:48px;padding-left: 5px;padding-right: 5px;"></button><button onclick="returnRating()" id="glyphicon" class="fa fa-frown-o" style="font-size:48px;"></button>
+
+        </div>
+        
+        <input type="submit" value="Submit">
+
+  
 
                 </div>
             </div>
+        -->    
         </div>
     </section>
 

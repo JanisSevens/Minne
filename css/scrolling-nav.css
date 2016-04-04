@@ -41,7 +41,14 @@ a:visited {
     color: #00ffff;
 }
 
+button {
 
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;}
 .minne.img-responsive {
     margin: 0 auto;
     padding-bottom: 50px;
@@ -65,38 +72,75 @@ a:visited {
 
 
 /* Glyphicons Comment Form */
-
-#glyphicon.fa.fa-smile-o {
+.form-group input[type="radio"]{
+    display: none;
+}
+.form-group label{
     color: #ffffff;
+    font-size: 48px;
+    cursor: pointer;
 }
 
-#glyphicon.fa.fa-smile-o:hover {
+.form-group input#tevreden:checked + label {
+    color: green;
+}
+
+.form-group input#voldoende:checked + label {
+    color: orange;
+}
+
+.form-group input#ontevreden:checked + label {
+    color: red;
+}
+
+input#ontevreden:hover {
+    color: red;
+}
+
+#ontevreden input[type="radio"]:hover{
+        color:#red;
+    }
+
+/*.fa.fa-smile-o {
+    color: #ffffff;
+    font-size:48px;
+}
+
+.fa.fa-smile-o:hover {
     color: green;
     text-decoration: none;
 }
 
-#glyphicon.fa.fa-smile-o:active {
+.fa.fa-smile-o:active {
     color: green;
     text-decoration: none;
 }
 
-a.fa.fa-meh-o {
+.fa.fa-meh-o {
     color: #ffffff;
+    font-size:48px;
 }
 
-a.fa.fa-meh-o:hover {
+.fa.fa-meh-o:hover {
     color: orange;
     text-decoration: none;
 }
 
-a.fa.fa-frown-o {
+.fa.fa-frown-o {
     color: #ffffff;
+    font-size:48px;
 }
 
-a.fa.fa-frown-o:hover {
+.fa.fa-frown-o:hover {
     color: red;
     text-decoration: none;
 }
+
+.fa.fa-frown-o:active {
+    color: red;
+    text-decoration: none;
+}
+*/
 
 
 .intro-section {

@@ -17,3 +17,8 @@ $(function() {
         event.preventDefault();
     });
 });
+
+//jQuery for glyphicons
+$("#tevreden").mouseover(function() {
+    $("#tevreden").css("color","red");
+});
