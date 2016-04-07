@@ -79,9 +79,42 @@ glyphicon glyphicon-triangle-top"></span></a>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container col-sm-offset-3 col-sm-6 col-xs-12">
-            <form action="" class="form-group">
-            <h2>Radio Buttons</h2>
+            <div class="container-fluid">    
+            <div class="visible-xs visible-sm col-md-6">
+<div id="googleMap" style="width:auto;height:200px;"></div>
+            </div>
+            <div class="visible-md visible-lg visible-xl col-md-6">
+<div id="googleMap2" style="width:auto;height:200px;"></div>
+            </div>
+            <div class="col-xs-12 col-md-6 content-15">
+              <form role="form" action="" method="post" >
+
+            <div class="form-group">
+                <label for="InputName">Your Name</label>
+            <div class="input-group">
+                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+            </div>
+            <div class="form-group">
+        <label for="InputEmail">Your Email</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputMessage">Message</label>
+        <div class="input-group"
+>
+          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+
+      <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+  </form>
+
+<!--            
+            <div class="form-group">
+
             <input type="radio" name="beoordeling" value"tevreden" id="tevreden"></input>
             <label for="tevreden" class="fa fa-smile-o"></label>
 
@@ -90,55 +123,15 @@ glyphicon glyphicon-triangle-top"></span></a>
 
             <input type="radio" name="beoordeling" value"ontevreden" id="ontevreden"></input>
             <label for="ontevreden" class="fa fa-frown-o"></label>
+            </div>
+
+        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
+-->
             
 
             </form>
 
-            <!-- <div class="form-group">
-                <label for="usr">Name:</label>
-                <input type="text" class="form-control" id="usr">
-            </div>
-        <div class="form-group">
-                <label for="email">Email:</label>
-                <input class="form-control" id="email" type="text">
-            </div>
-        <div class="form-group">
-                <label for="onderwerp">Onderwerp:</label>
-                <input class="form-control" id="onderwerp"></textarea>
-                
-        </div>
-        <div class="form-group">
-                <label for="comment">Comment:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-                
-        </div>
-        <div class="form-group">
-                <label><input type="checkbox" value="true">Ik wens op de hoogte te blijven van de activiteiten van de Minne.</label>
-        </div> 
-
-        <div class="form-group">
-                <label for="positief" class="fa fa-smile-o"></label>
-                <input type="checkbox" name="glyphicon" id="positief" value="positief">
-                <label for="voldoende" class="fa fa-meh-o"></label>
-                <input type="checkbox" name="glyphicon" id="voldoende" value="voldoende">
-        </div>
-
-
-        do not display    
-
-        <div class="form-group">
-
-        <button onclick="return()" id="glyphicon" class="fa fa-smile-o" style="font-size:48px;"></button><button onclick="returnRating()" id="glyphicon" class="fa fa-meh-o" style="font-size:48px;padding-left: 5px;padding-right: 5px;"></button><button onclick="returnRating()" id="glyphicon" class="fa fa-frown-o" style="font-size:48px;"></button>
-
-        </div>
-        
-        <input type="submit" value="Submit">
-
-  
-
-                </div>
-            </div>
-        -->    
+   
         </div>
     </section>
 
@@ -151,9 +144,45 @@ glyphicon glyphicon-triangle-top"></span></a>
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
 <script>
+var myCenter=new google.maps.LatLng(51.0502639,3.7294199);
+
+function initialize()
+{
+var mapProp = {
+    center:myCenter,
+    zoom:15,
+    scrollwheel: false,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+var myCenter=new google.maps.LatLng(51.0502639,3.7294199);
+
+
+
 
 </script>
+
+
 
 </body>
 

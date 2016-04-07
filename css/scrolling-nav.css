@@ -75,7 +75,7 @@ button {
 .form-group input[type="radio"]{
     display: none;
 }
-.form-group label{
+.form-group label.fa {
     color: #ffffff;
     font-size: 48px;
     cursor: pointer;
@@ -176,9 +176,12 @@ input#ontevreden:hover {
 }
 
 .contact-section {
-    height: 100%;
+    min-height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #2b4254;
 
 }
+
+
+
